@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0eded;  /* Light gray background */
+    color: #333;  /* Dark text color */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(232, 228, 228);
+    padding: 15px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #007aff;  /* Apple blue */
+}
+
+/* Hero Section */
+.hero {
+    height: 50vh;
+    background-color: #eeeef1;
+    background-image: url('https://pics.craiyon.com/2024-02-10/F54xREi7TmaSPBMi94b26A.webp');  /* Optional: Add your own background image */
+  
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(7, 7, 7);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-section ul {
+    list-style: none;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Optional Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
